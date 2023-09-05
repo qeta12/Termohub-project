@@ -1,0 +1,202 @@
+:root {
+  --color-grey: #798296;
+  --color-grey-light: #E1E1E1;
+  --color-green: #6CB43F;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "FiraGo", sans-serif;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-info-logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.header-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  padding: 0 5rem;
+}
+.header-list a {
+  font-size: 1.3rem;
+  font-weight: medium;
+  color: var(--color-grey);
+}
+.header-list .active {
+  color: var(--color-green);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+.header-list .product,
+.header-list .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.3rem;
+}
+.header-icon {
+  width: 1.5%;
+}
+
+.lang-bar {
+  width: 7.4rem;
+  height: 0.5rem;
+  padding: 1.5rem;
+  border: 0.1rem solid;
+  border-color: var(--color-grey-light);
+  text-align: center;
+  border-radius: 0.9rem;
+}
+.lang-bar span {
+  color: var(--color-grey);
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+}
+.landing .background {
+  width: 102%;
+  position: relative;
+}
+.landing .rect {
+  position: absolute;
+  top: 12.3rem;
+  left: 0;
+  width: 38.9%;
+  height: auto;
+}
+.landing .landing-text {
+  padding: 5rem;
+  color: #FFFFFF;
+}
+.landing .landing-text h2 {
+  position: absolute;
+  top: 28rem;
+  left: 11.8rem;
+  width: 40%;
+  height: auto;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.landing .landing-text p {
+  position: absolute;
+  top: 40rem;
+  left: 11.8rem;
+  width: 20%;
+}
+.landing .landing-text .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 55rem;
+  left: 11.8rem;
+  width: 17%;
+  height: 4.5rem;
+  border-radius: 5rem;
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.landing .landing-text .btn span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.landing .landing-text .btn-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 4.2rem;
+  height: 4.2rem;
+  margin-top: -0.2rem;
+  margin-right: -2.7rem;
+  position: relative;
+}
+.landing .landing-text .btn-icon a {
+  text-align: center;
+}
+.landing .landing-text .btn-icon a img {
+  width: 0.482rem;
+  height: 0.964rem;
+  position: absolute;
+  top: 1.7rem;
+  left: 2rem;
+}
+.landing .btn {
+  position: absolute;
+  border-radius: 5rem;
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2rem 3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0.01rem 0.01rem #707070;
+          box-shadow: 0.01rem 0.01rem #707070;
+}
+.landing .btn .pointer {
+  top: 75rem;
+  left: 51.8rem;
+  width: 5rem;
+  height: 5rem;
+  z-index: 2;
+}
+.landing .btn .pointer-1 {
+  top: 75rem;
+  left: 106.8rem;
+  width: 5rem;
+  height: 5rem;
+  z-index: 2;
+}/*# sourceMappingURL=main.css.map */

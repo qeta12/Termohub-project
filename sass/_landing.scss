@@ -1,0 +1,106 @@
+.landing {
+    width: 100%;
+    height: 100vh;
+    .background {
+        width: 102%;
+        position: relative;
+    }
+    .rect {
+        position: absolute;
+        top: 12.3rem;
+        left: 0;
+        width: 38.9%;
+        height: auto;
+    }
+    .landing-text {
+        padding: 5rem;
+        color: #FFFFFF;
+        h2 {
+            position: absolute;
+            top: 28rem;
+            left: 11.8rem;
+            width: 40%;
+            height: auto;
+            font-size: 3rem;
+            font-weight: bold;
+            
+        }
+        p {
+            position: absolute;
+            top: 40rem;
+            left: 11.8rem;
+            width: 20%;
+        }
+        .btn {
+            display: flex;
+            gap: 1rem;
+            position: absolute;
+            align-items: center;
+            top: 55rem;
+            left: 11.8rem;
+            width: 17%;
+            height: 4.5rem;
+            border-radius: 5rem;
+            border: none;
+            width: fit-content;
+            // padding: 2rem 3rem;
+            background-color: rgba($color: #fff, $alpha: .3);
+            
+           
+            span {
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: #FFFFFF;
+            }
+            &-icon {
+                background-color: #fff;
+                border-radius: 50%;
+                width: 4.2rem;
+                height: 4.2rem;
+                margin-top: -.2rem;
+                margin-right: -2.7rem;
+                position: relative;
+                a {
+                    text-align: center;
+                    img {
+                        width: .482rem;
+                        height: .964rem;
+                        position: absolute;
+                        top: 1.7rem;
+                        left: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    .btn {
+            
+            position: absolute;
+           
+            
+            border-radius: 5rem;
+            border: none;
+            width: fit-content;
+            padding: 2rem 3rem;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: .01rem .01rem #707070;
+            
+            .pointer{
+                top: 75rem;
+                left: 51.8rem;
+            
+                width: 5rem;
+                height: 5rem;
+                z-index: 2;
+            }
+            .pointer-1{
+                top: 75rem;
+                left: 106.8rem;
+            
+                width: 5rem;
+                height: 5rem;
+                z-index: 2;
+            }
+    }
+}
