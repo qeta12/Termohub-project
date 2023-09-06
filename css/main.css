@@ -98,6 +98,7 @@ html {
 .landing {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 .landing .background {
   width: 102%;
@@ -105,18 +106,17 @@ html {
 }
 .landing .rect {
   position: absolute;
-  top: 12.3rem;
+  top: 0;
   left: 0;
   width: 38.9%;
   height: auto;
 }
 .landing .landing-text {
-  padding: 5rem;
   color: #FFFFFF;
 }
 .landing .landing-text h2 {
   position: absolute;
-  top: 28rem;
+  top: 16rem;
   left: 11.8rem;
   width: 40%;
   height: auto;
@@ -125,7 +125,7 @@ html {
 }
 .landing .landing-text p {
   position: absolute;
-  top: 40rem;
+  top: 28rem;
   left: 11.8rem;
   width: 20%;
 }
@@ -138,10 +138,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 55rem;
+  top: 43rem;
   left: 11.8rem;
-  width: 17%;
   height: 4.5rem;
+  padding-left: 3.5rem;
   border-radius: 5rem;
   border: none;
   width: -webkit-fit-content;
@@ -160,7 +160,7 @@ html {
   width: 4.2rem;
   height: 4.2rem;
   margin-top: -0.2rem;
-  margin-right: -2.7rem;
+  margin-right: 0.3rem;
   position: relative;
 }
 .landing .landing-text .btn-icon a {
@@ -173,30 +173,39 @@ html {
   top: 1.7rem;
   left: 2rem;
 }
-.landing .btn {
-  position: absolute;
-  border-radius: 5rem;
+.landing .btn-1 {
+  display: grid;
+  grid-template-columns: 4.2rem 4.2rem;
+  grid-gap: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: sticky;
   border: none;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 2rem 3rem;
-  background-color: #fff;
+  background-color: transparent;
+  left: 80%;
+}
+.landing .btn-1 .pointer,
+.landing .btn-1 .pointer-1 {
+  width: 4.2rem;
+  height: 4.2rem;
+  z-index: 10;
   border-radius: 50%;
+  border-radius: 5rem;
   -webkit-box-shadow: 0.01rem 0.01rem #707070;
           box-shadow: 0.01rem 0.01rem #707070;
+  background-color: #fff;
 }
-.landing .btn .pointer {
-  top: 75rem;
-  left: 51.8rem;
-  width: 5rem;
-  height: 5rem;
-  z-index: 2;
+.landing .btn-1 .pointer {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
-.landing .btn .pointer-1 {
-  top: 75rem;
-  left: 106.8rem;
-  width: 5rem;
-  height: 5rem;
-  z-index: 2;
+.landing .btn-1 .icon {
+  position: absolute;
+  top: 27%;
+}
+.landing .line {
+  position: sticky;
+  top: 65rem;
+  left: 8rem;
 }/*# sourceMappingURL=main.css.map */

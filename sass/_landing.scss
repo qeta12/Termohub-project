@@ -1,23 +1,26 @@
 .landing {
+
     width: 100%;
     height: 100vh;
+    position: relative;
+   
     .background {
         width: 102%;
         position: relative;
     }
     .rect {
         position: absolute;
-        top: 12.3rem;
+        top: 0;
         left: 0;
         width: 38.9%;
         height: auto;
     }
     .landing-text {
-        padding: 5rem;
+        
         color: #FFFFFF;
         h2 {
             position: absolute;
-            top: 28rem;
+            top: 16rem;
             left: 11.8rem;
             width: 40%;
             height: auto;
@@ -27,7 +30,7 @@
         }
         p {
             position: absolute;
-            top: 40rem;
+            top: 28rem;
             left: 11.8rem;
             width: 20%;
         }
@@ -36,14 +39,14 @@
             gap: 1rem;
             position: absolute;
             align-items: center;
-            top: 55rem;
+            top: 43rem;
             left: 11.8rem;
-            width: 17%;
+            
             height: 4.5rem;
+            padding-left: 3.5rem;
             border-radius: 5rem;
             border: none;
             width: fit-content;
-            // padding: 2rem 3rem;
             background-color: rgba($color: #fff, $alpha: .3);
             
            
@@ -58,7 +61,7 @@
                 width: 4.2rem;
                 height: 4.2rem;
                 margin-top: -.2rem;
-                margin-right: -2.7rem;
+                margin-right: .3rem;
                 position: relative;
                 a {
                     text-align: center;
@@ -73,34 +76,44 @@
             }
         }
     }
-    .btn {
+    .btn-1 {
+            display: grid;
+            grid-template-columns: 4.2rem 4.2rem;
+            grid-gap: 2rem;
+            justify-content: space-between;
+            position: sticky;
+            border: none;
+            background-color: transparent;
             
-            position: absolute;
+            left: 80%;
+            
            
             
-            border-radius: 5rem;
-            border: none;
-            width: fit-content;
-            padding: 2rem 3rem;
-            background-color: #fff;
-            border-radius: 50%;
-            box-shadow: .01rem .01rem #707070;
-            
-            .pointer{
-                top: 75rem;
-                left: 51.8rem;
-            
-                width: 5rem;
-                height: 5rem;
-                z-index: 2;
+            .pointer, 
+            .pointer-1 {
+                
+                width: 4.2rem;
+                height: 4.2rem;
+                z-index: 10;
+                border-radius: 50%;
+                border-radius: 5rem;
+                box-shadow: .01rem .01rem #707070;
+                background-color: #fff;
             }
-            .pointer-1{
-                top: 75rem;
-                left: 106.8rem;
-            
-                width: 5rem;
-                height: 5rem;
-                z-index: 2;
+            .pointer {
+                transform: rotate(-180deg);
             }
+           .icon {
+            position: absolute;
+            top: 27%;
+            
+            
+           }
     }
+  .line {
+    position: sticky;
+    top: 65rem;
+    left: 8rem;
+  }
+
 }
