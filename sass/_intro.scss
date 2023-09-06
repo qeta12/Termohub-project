@@ -1,0 +1,31 @@
+.intro {
+    display: flex;
+    
+    height: 18.6rem;
+    background-color: var(--color-blue-light);
+    padding-bottom: 9rem;
+    &-description {
+        margin: 9rem;
+        
+    }
+    &-description {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+    &-header {
+        border-right: .1rem solid var(--color-grey);
+        padding-right: 2rem;
+        
+        font-size: 3rem;
+        font-weight: bold;
+        color: var(--color-green);
+    }
+    &-paragraph {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: var(--color-grey);
+    }
+    }
+}
