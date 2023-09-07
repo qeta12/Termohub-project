@@ -610,6 +610,13 @@ html {
   .footer .footer-container-contact .map {
     min-width: 80vw;
   }
+}
+@media only screen and (max-width: 63.1875em) and (max-width: 36.875em) {
+  .footer .footer-container-contact .map {
+    min-width: 107vw;
+  }
+}
+@media only screen and (max-width: 63.1875em) {
   .footer .footer-container-contact .contact-list-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
