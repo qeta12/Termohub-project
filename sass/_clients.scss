@@ -15,6 +15,9 @@
         justify-content: space-around;
         align-items: center;
         gap: 2rem;
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column; 
+        }
         
         &-smartweb-conteiner,
         &-coca-conteiner,
@@ -28,6 +31,11 @@
             border-radius: .5rem;
             min-width: 24.8rem;
             min-height: 15.3rem;
+            @media only screen and (max-width: $bp-small) {
+                min-width: 90rem;
+                min-height: 15.3rem;
+            }
+            
         }
        
     }

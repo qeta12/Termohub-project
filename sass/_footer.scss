@@ -2,6 +2,9 @@
     display: flex;
     margin-top: 5rem;
     padding: 5rem 5rem 5rem 10rem;
+    @media only screen and (max-width: $bp-small) {
+        padding: 0 0 0 7;
+    }
     
     background-color: var(--color-grey-ligher);
     &-container {
@@ -62,4 +65,23 @@
             color: var(--color-green);
         }
 }
+@media only screen and (max-width: $bp-medium) {
+    
+    .footer-container-contact {
+        flex-direction: column;
+        .map {
+            min-width:80vw;
+        }
+        .contact-list-container {
+            flex-direction: row;
+        }
+        
+    }
+    .span {
+        margin-left: -10%;
+        
+    }
+
+}
+
 }

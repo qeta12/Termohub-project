@@ -1,16 +1,41 @@
 :root {
     --color-grey: #798296;
+    --color-grey-dark: #707070;
     --color-grey-light: #E1E1E1;
     --color-grey-ligher: #F5F5F5;
     --color-green: #6CB43F;
     --color-blue-light: #F5FAFC;
-   
-    
+
 }
+$bp-largest: 78.125em; // 1250px
+$bp-large: 71.125em; //1138px
+$bp-medium: 63.1875em; //1011px
+$bp-medium-1: 58.0625em; //929px
+$bp-medium-2: 52.8125em; //845px
+$bp-small: 44em; //704px
+$bp-smallest: 36.875em; //590px
+
 
 html {
     font-size: 62.5%;
     font-family: "FiraGo", sans-serif;
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%; 
+    }
+    @media only screen and (max-width: $bp-medium-1) {
+        font-size: 45%; 
+    }
+    @media only screen and (max-width: $bp-medium-2) {
+        font-size: 40%; 
+    }
+    @media only screen and (max-width: $bp-small) {
+        font-size: 37.5%; 
+    }
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 35%; 
+    }
+
+
     
 }
 
@@ -21,3 +46,8 @@ html {
     padding: 0;
 }
 
+body {
+    @media only screen and (max-width: $bp-smallest) {
+        min-width: min-content;
+    }
+}

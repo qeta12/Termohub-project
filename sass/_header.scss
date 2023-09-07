@@ -9,6 +9,23 @@
         &-logo {
            width: fit-content;
         }
+        .burger-manu {
+            @media only screen and (max-width: $bp-medium-2) {
+                position: sticky;
+                left: 150rem;
+            }
+            img {
+                max-width: 5rem;
+                max-height: 5rem;
+                display: none;
+                @media only screen and (max-width: $bp-medium-2) {
+                    display: flex;
+                   
+                }
+                
+            }
+            
+        }
 }
 
     
@@ -20,6 +37,9 @@
         flex-direction: row;
         gap: 1rem;
         padding: 0 5rem;
+        @media only screen and (max-width: $bp-medium-2) {
+            display: none;
+        }
         
             a {
                 font-size: 1.3rem;
@@ -54,9 +74,14 @@
     border-color: var(--color-grey-light);
     text-align: center;
     border-radius: .9rem;
+    @media only screen and (max-width: $bp-medium-2) {
+        display: none;
+       
+    }
     span {
         color: var(--color-grey);
         
         
     }
+    
 }
